@@ -1,0 +1,21 @@
+{
+    "name":"weatheralert",
+    "short_name" :"weatheralert",
+    "start_url":".",
+    "background_color": "white",
+    "theme_color": "royalblue",
+    "permissions": [
+        "http://www.google.com/",
+        "https://www.google.com/"
+      ],
+      "display": "standalone",
+      "icons":[{
+        "src":"log.png",
+        "sizes":"165x165",
+        "type": "image/png"
+  }
+    
+  ]
+     
+    
+}

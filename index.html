@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="royalblue">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="log.png">
+    <title>Weatheralert</title>
+</head>
+<body>
+    
+<div class="head">
+      <h1>Weatheralert</h1>
+</div>
+ 
+<div class="today">
+    <p id="time"></p>
+    <div class="search-box">
+        <input type="text" id="city" placeholder="Search" name="search">
+        <button type="submit" onclick="weatherAlert()"><i class="fa fa-search"></i></button>
+        
+    </div>
+    
+    
+    <h2>The weather today is:</h2>
+    <div id="weather">
+        <div id="description"></div>
+        <h1 id="temp"></h1>
+    <div id="location"></div>
+    </div>
+    
+</div>
+
+    <script type="text/javascript" src="main.js"></script>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.20.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.20.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>

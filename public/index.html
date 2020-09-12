@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="royalblue">
+    <link href="styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">-->
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="log.png">
+    <title>Weatheralert</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.20.0/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.20.0/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.20.0/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.20.0/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.20.0/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+    
+  </head>
+  <body>
+    <div class="today">
+      <p id="time"></p>
+      <div class="search-box">
+          <input type="text" id="city" placeholder="Search" name="search">
+          <button type="submit" onclick="weatherAlert()"><i class="fa fa-search"></i></button>
+          
+      </div>
+      
+      
+      <h2>The weather today is:</h2>
+      <div id="weather">
+          <div id="description"></div>
+          <h1 id="temp"></h1>
+      <div id="location"></div>
+      </div>
+      
+  </div>
+  <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>
